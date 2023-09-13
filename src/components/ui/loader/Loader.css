@@ -1,0 +1,19 @@
+.loader {
+    background: url('../../../img/loader.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    animation: loader 3s infinite;
+    position: absolute;
+    left: 50%;
+}
+
+@keyframes loader {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

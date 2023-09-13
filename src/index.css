@@ -5,6 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(255, 255, 255, 1);
+  background-image: url('http://kostiuresph.webtm.ru/test-tasks/eLibrary/background.jpg');
+  background-blend-mode: luminosity;
+  transition: background-color 2s ease-out;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 code {

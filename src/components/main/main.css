@@ -1,0 +1,64 @@
+.main {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.main_title {
+  margin: 0;
+  font-size: 80px;
+  color: #ffffff;
+}
+
+.main_title_wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  border-right: 1px solid transparent;
+  animation: typewriting 10s steps(15) 1s infinite normal, textCursor 500ms steps(16) infinite normal;
+  margin-bottom: 100px;
+}
+
+@keyframes typewriting{
+    0% {
+        width: 0;
+    }
+    20% {
+        width: 805px;
+    }
+
+    100% {
+        width: 805px;
+    }
+}
+
+@keyframes textCursor {
+    from {
+        border-right: 2px solid #ffffff;
+    }
+
+    to {
+        border-right: 2px solid transparent;
+    }
+}
+
+@media (max-width: 960px) {
+    .main {
+        align-items: center;
+    }
+    .main_title {
+        font-size: 30px;
+    }
+
+    @keyframes typewriting{
+        0% {
+            width: 0;
+        }
+        20% {
+            width: 300px;
+        }
+    
+        100% {
+            width: 300px;
+        }
+    }
+  }
